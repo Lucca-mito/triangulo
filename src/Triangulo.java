@@ -12,22 +12,16 @@ public class Triangulo {
 			c = input.nextInt(),
 			d = input.nextInt();
 		
-			if (existeTriangulo(a,b,c)){
-				 System.out.println("S");
-				 
-			}
-			else if (existeTriangulo(a,b,d)){
-				 System.out.println("S");
-			 }
-			else if (existeTriangulo(b,d,c)){
-				 System.out.println("S");
-			 }
-			else if (existeTriangulo(a,d,c)){
-				 System.out.println("S");
-			 }
-			 else{
-				 System.out.println("N");
-				 }
+			if (
+					existeTriangulo(a,b,c) ||
+					existeTriangulo(a,b,d) ||
+					existeTriangulo(b,d,c) ||
+					existeTriangulo(a,d,c)
+			) 
+				System.out.println("S");
+			
+			else
+				System.out.println("N");
 		}
 	}
 

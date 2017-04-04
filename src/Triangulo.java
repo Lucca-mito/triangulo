@@ -11,7 +11,14 @@ public class Triangulo {
 			b = input.nextInt(),
 			c = input.nextInt(),
 			d = input.nextInt();
-		return ()
+		for(int i=0; i < 4; i++){
+		 if (existeTriangulo(a,b,c)){
+			 System.out.println("S");
+		 }
+		 else{
+			 System.out.println("N");
+		 }
+		}
 	}
 
 }
